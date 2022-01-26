@@ -1,0 +1,226 @@
+/* 반응형 제작 ************************************
+**************************************************/
+
+@media screen and (max-width: 1024px) {
+    
+    /* 모션그래픽디자인 슬라이드 */
+    .motion_slide .swiper-slide figure {
+        height: 35vw;
+    }
+    .motion_slide .swiper-slide .list {
+        margin-top: -24%;
+    }
+    .motion_slide .swiper-slide .list .info {
+        margin-top: 1%;
+    }
+
+    /* 버튼들 */
+    .btn {margin-top: 30px;}
+}
+
+
+@media screen and (max-width: 960px) {
+    /* 모션그래픽디자인 상단 */
+    .motion .info {flex-wrap: wrap;}
+    .motion .info video {
+        width: 100%;
+    }
+    .motion .info .text {
+        width: 95%;
+        margin: 20px auto;
+    }
+    .motion .flex_bottom ul li {width: 24%;}
+    .motion .flex_bottom ul li:last-child {display: none;}
+    .motion .flex_bottom ul li figure {height: 180px;}
+
+    .motion .motion_in:nth-of-type(2) .info video { order: -1;}
+
+    /* 모션그래픽디자인 슬라이드 */
+    .motion_slide .swiper-slide .list video {
+        width: 100%;
+    }
+    .motion_slide .swiper-slide .list .info {
+        width: 95%;
+        margin: 20px auto;
+    }
+    .motion_slide .swiper-slide .list {
+        width: 90%; 
+    }
+    .motion_slide {margin: 70px auto;}
+
+
+    /* 유튜브 리스트 */
+    .youtube_list {margin: 0 auto;}
+
+    /* 그래픽디자인 */
+    .g_design {margin-top: 70px;} 
+}
+
+
+@media screen and (max-width: 640px) {
+    :root  {--swiper-navigation-size: 24px;}
+
+    h3 {font-size: 30px;}
+    h4 {font-size: 24px;}
+    .tit {display: none;}
+
+    /* 메인비주얼 */
+    .main_visual div {
+        width: 70%;
+        height: 60vh;
+    }
+   /* 프로파일 */
+   .profile {
+    max-width: 1024px;
+    width: calc(100% - 30px);
+    margin: 150px auto;
+    display: flex; 
+    justify-content: space-between; 
+}
+.profile .photo {
+    width: 40%;
+    text-align: center;
+    font-size: 20px;
+}
+.profile figure {
+    border-radius: 40px;
+    overflow: hidden;
+}
+.profile figure img {
+    width: 100%;
+    display: block;
+}
+.profile .photo p {
+    margin-top: 10px;
+}
+ 
+.profile .about {
+    width: 58%;
+    background-color: rgb(240, 240, 240);
+    height: 100%;
+    border-radius: 40px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+.profile .about dl { 
+    /* text-align: right; */
+    font-size: 18px;
+}
+.profile .about dl dt {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.profile .about dl dd {
+    margin-bottom: 7px;
+}
+
+    /* 모션그래픽디자인 */
+    .motion {margin: 80px auto;} 
+    .motion .motion_in {margin-bottom: 80px;}
+    .motion .motion_in > ul {flex-wrap: wrap;}
+
+    .motion .info .info h4 {margin-bottom: 10px;}
+    .motion .info .info p {margin-bottom: 30px;}
+
+    .motion .thum {display: none;}
+    .motion .thum ul li:nth-child(4) {display: none;}
+    .motion .thum ul li {width: 32%;}
+    .motion .thum ul li figure {height: 120px;}
+    
+    /* 모션그래픽디자인 슬라이드 */
+    .motion_slide {margin: 70px auto;}
+    .motion_slide .swiper-slide .info h4 {font-size: 24px; margin-bottom: 10px;}
+ 
+
+    /* 유튜브리스트 */ 
+    .youtube_list {padding:0;}
+    .youtube_list .swiper-slide .info {padding: 15px;}
+    .youtube_list .swiper-slide .info dl {font-size: 16px;}
+    /* 리스트 슬라이드 */
+    .mySwiperyoutube .swiper-wrapper.on {
+        flex-wrap: nowrap;
+    }
+    .mySwiperyoutube .swiper-wrapper.on .swiper-slide {
+        width: 420px;
+    } 
+    .mySwiperyoutube .swiper-wrapper > div {margin: 0; }
+    
+
+    /* 그래픽디자인 */
+    .g_design {margin: 70px auto;}
+    .g_design .img_list {flex-wrap: wrap;}
+    .g_design .img_list div {width: 49%; margin: 10px 0;}
+    
+}
+
+
+@media screen and (max-width: 400px) {
+    
+    .motion .info .text dl dt {width: 30%;}
+    .motion .info .text dl dd {width: 65%;}
+    .motion .thum {margin-top: 10px;}
+
+ 
+    .motion_slide .list .info dl dt {width: 30%;}
+    .motion_slide .list .info dl dd {width: 65%;}
+
+
+    /* 유튜브리스트 */
+    .youtube_list h3 {font-size: 25px;}
+    
+    .youtube_list .swiper-slide .info dl {flex-wrap: wrap;}
+    .youtube_list .swiper-slide .info dl dt {width: 100%;}
+    .youtube_list .swiper-slide .info dl dd {width: 100%;}
+
+    /* 그래픽디자인 */ 
+    .img_list a ul {padding: 10px;}
+    .img_list a ul li:nth-child(2) {font-size: 17px;}
+    
+}
+
+/* 프로파일 */
+.profile {
+    max-width: 1024px;
+    width: calc(100% - 30px);
+    margin: 150px auto;
+    display: flex; 
+    justify-content: space-between; 
+}
+.profile .photo {
+    width: 40%;
+    text-align: center;
+    font-size: 20px;
+}
+.profile figure {
+    border-radius: 40px;
+    overflow: hidden;
+}
+.profile figure img {
+    width: 100%;
+    display: block;
+}
+.profile .photo p {
+    margin-top: 10px;
+}
+ 
+.profile .about {
+    width: 58%;
+    background-color: rgb(240, 240, 240);
+    height: 100%;
+    border-radius: 40px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+.profile .about dl { 
+    /* text-align: right; */
+    font-size: 18px;
+}
+.profile .about dl dt {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.profile .about dl dd {
+    margin-bottom: 7px;
+}
